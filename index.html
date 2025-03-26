@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzz</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/js.js" charset="UTF-8"></script> 
+    <script src="./js/1.js" charset="UTF-8"></script> 
+    <script src="./js/5.js" charset="UTF-8"></script> 
+    <script src="./js/3.js" charset="UTF-8"></script> 
+    <script src="./js/4.js" charset="UTF-8"></script> 
+    <script src="./js/draw.js" charset="UTF-8"></script> 
+</head>
+<body>
+ <div class="section1"> 
+    <div class="square">
+        <div class="box"><h1 class="text">!</h1></div>
+        <div class="box1"><h1 class="text">?</h1></div>
+        <div class="box2"><h1 class="text">?</h1></div>
+    </div>
+    <div class="square1">
+        <div class="box3"><h1 class="text">//</h1></div>
+        <div class="box4"><h1 class="text">B</h1></div>
+        <div class="box5"><h1 class="text">U</h1></div>
+        <div class="box6"><h1 class="text">Z</h1></div>
+        <div class="box7"><h1 class="text">Z</h1></div>
+    </div>
+   <div class="square2">
+        <div class="box8"><h1 class="text">2</h1></div>
+        <div class="box9"><h1 class="text">0</h1></div>
+        <div class="box10"><h1 class="text">2</h1></div>
+        <div class="box11"><h1 class="text">5</h1></div>
+    </div>
+    <h2 class="text1">ВЕДЕТСЯ НАБОР СОТРУДНИКОВ</h2>
+    <h3 class="text2">для трудоустройства в организацию <br> «Buzz» необходимо пройти <br> обязательное  тестирование</h3>
+    <h3 class="text3">пожалуйста, заполните анкету<br> и предоставьте портфолио для оценки <br>ваших профессиональных навыков</h3>
+      <div class="buttun">
+        <button class="button_bck"><h1 class="text4">←</h1></button>
+        <button class="button_section1"><h1 class="text4">→</h1></button>
+        <button id="pagge2" ><h1 class="text4">?</h1></button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <button class="close"><h1 class="text29">x</h1></button>
+        <h3 class="text30">This is the content of the popup.</h3>
+    </div>
+        <div class="conteiner">
+        <div class="chek"><img src="./img/chek.svg" alt=""></div>
+        <div class="title1"><img src="./img/title1.svg" alt=""></div>
+        <div class="title2"><img src="./img/title2.svg" alt=""></div>
+    </div>
+</div> 
+<div class="section2 sectionnn">
+    <div class="back"></div>
+    <div class="buttun1">
+        <button class="button_back" data-ter="section1"><h1 class="text4">←</h1></button>
+        <button class= "button_section2"><h1 class="text4">→</h1></button>
+        <button class="pagge5" ><h1 class="text4">?</h1></button>
+    </div>
+    <div class="square">
+        <div class="box"><h1 class="text">!</h1></div>
+        <div class="box1"><h1 class="text">!</h1></div>
+        <div class="box2"><h1 class="text">?</h1></div>
+    </div>
+    <h2 class="text7">ИЗДАТЕЛЬСТВО СПЛЕТЕН «BUZZ»</h2>
+    <h3 class="text8">укажите все необходимые личные данные, <br>загрузите фотографию и выберите подходящий <br>фон для вашей визитной карточки</h3>
+    <h3 class="text5">попадая в нашу организацию, <br>вы оказываетесь в центре сенсаций</h3>
+    <div class="square3">
+        <div class="box8"><h1 class="text">B</h1></div>
+        <div class="box9"><h1 class="text">U</h1></div>
+        <div class="box10"><h1 class="text">Z</h1></div>
+        <div class="box11"><h1 class="text">Z</h1></div>
+    </div>
+    <h3 class="text6">это организация специализируется<br>на создании, хранении и распространении<br>слухов, сплетен и интриг среди людей</h3>
+    <div class="square4">
+        <div class="box12"><h1 class="text">!</h1></div>
+        <div class="box13"><h1 class="text">!</h1></div>
+        <div class="box14"><h1 class="text">!</h1></div>
+        <div class="box15"><h1 class="text">!</h1></div>
+        <div class="box16"><h1 class="text">!</h1></div>
+    </div>
+    <div class="square5">
+        <div class="box8"><h1 class="text">2</h1></div>
+        <div class="box9"><h1 class="text">0</h1></div>
+        <div class="box10"><h1 class="text">2</h1></div>
+        <div class="box11"><h1 class="text">5</h1></div>
+    </div>
+    <div class="square6">
+        <div class="box12"><h1 class="text">!</h1></div>
+        <div class="box13"><h1 class="text">!</h1></div>
+    </div>
+    <div class="card">
+        <div class="log"><img src="./img/log.jpg" alt=""></div>    
+        <div id="dropArea">
+            <input type="file" id="file-input" accept="image/*" style="display: none;">
+            <img id="uploaded-image" src="" alt="">
+            <img class="default-image" src="./img/img.svg" alt="Default Image">
+        </div>
+        <div class="square7">
+            <div class="box17"><h1 class="text">№</h1></div>
+            <div class="box18"><h1 class="text">1</h1></div>
+            <div class="box19"><h1 class="text">2</h1></div>
+            <div class="box20"><h1 class="text">4</h1></div>
+            <div class="box21"><h1 class="text">4</h1></div>
+            <div class="box22"><h1 class="text">4</h1></div>
+        </div>
+        <hr class="liner">
+        <div class="text9">КАРТОЧКА «BUZZ»</div>
+        <div class="text10">издательство сплетен</div>
+        <div class="text11">прозвище:</div>
+        <div class="text12">любимая сплетня:</div>
+        <div class="text13">получение информации:</div>
+        <div class="text14">процент улавливаемых слухов:</div>
+        <div class="text15">подпись:</div>
+        <div id="text1cont" class="text1conteiner"></div>
+        <div id="text2cont" class="text2conteiner"></div>
+        <div id="text3cont" class="text3conteiner"></div>
+        <div id="text4cont" class="text4conteiner"></div>
+        <div class="square8">
+            <div class="box24"><h1 class="text">//</h1></div>
+            <div class="box25"><h1 class="text">0</h1></div>
+            <div class="box26"><h1 class="text">0</h1></div>
+            <div class="box27"><h1 class="text">0</h1></div>
+            <div class="box28"><h1 class="text">0</h1></div>
+            <div class="box29"><h1 class="text">0</h1></div>
+            <div class="box30"><h1 class="text">0</h1></div>
+            <div class="box31"><h1 class="text">0</h1></div>
+            <div class="box32"><h1 class="text">0</h1></div>
+            <div class="box33"><h1 class="text">0</h1></div>
+        </div>
+        <hr class="liner1">
+        <hr class="liner2">
+        <hr class="liner3">
+        <hr class="liner4">
+    </div>
+    <div class="podpic"></div>
+    <div class="box23"></div>
+</div>
+<div class="section3">
+    <div class="buttun2">
+        <button class="button_backk" data-ter="section2"><h1 class="text4">←</h1></button>
+        <button class="button_section3"><h1 class="text4">→</h1></button>
+        <button class="pagge6" ><h1 class="text4">?</h1></button>
+    </div>
+    <div class="city"><img src="./img/city.svg" alt=""></div>
+    <div class="box34"></div>
+    <div class="square9">
+        <div class="box8"><h1 class="text">2</h1></div>
+        <div class="box9"><h1 class="text">0</h1></div>
+        <div class="box10"><h1 class="text">2</h1></div>
+        <div class="box11"><h1 class="text">5</h1></div>
+    </div>
+    <h2 class="text16">ВАШЕ ПОРТФОЛИО</h2>
+    <h3 class="text17">для принятия решения о сотрудничестве <br>просим вас продемонстрировать ваши <br>профессиональные навыки и умения</h3>
+    <h2 class="text18">ИЗДАТЕЛЬСТВО СПЛЕТЕН «BUZZ»</h2>
+    <div class="square10">
+        <div class="box8"><h1 class="text">B</h1></div>
+        <div class="box9"><h1 class="text">U</h1></div>
+        <div class="box10"><h1 class="text">Z</h1></div>
+        <div class="box11"><h1 class="text">Z</h1></div>
+    </div>
+    <div class="square11">
+        <div class="box"><h1 class="text">!</h1></div>
+        <div class="box1"><h1 class="text">?</h1></div>
+        <div class="box2"><h1 class="text">?</h1></div>
+    </div>
+    <div class="building building1"><img src="./img/building1.svg" alt=""></div>
+    <div class="building building2"><img src="./img/building2.svg" alt=""></div>
+    <div class="building building3"><img src="./img/building3.svg" alt=""></div>
+    <div class="building building4"><img src="./img/building4.svg" alt=""></div>
+    <div class="building building5"><img src="./img/building5.svg" alt=""></div>
+</div>
+<div class="section4">
+    <div class="buttun3">
+        <button class="button_backkk" data-ter="section3"><h1 class="text4">←</h1></button>
+        <button class="button_section4"><h1 class="text4">→</h1></button>
+        <button class="pagge7" ><h1 class="text4">?</h1></button>
+    </div>
+    <div class="fence"><img src="./img/fence.svg" alt=""></div>
+    <h2 class="text19">ВАШЕ ПОРТФОЛИО</h2>
+    <div class="box35"></div>
+    <div class="square12">
+        <div class="box12"><h1 class="text">!</h1></div>
+        <div class="box13"><h1 class="text">!</h1></div>
+        <div class="box14"><h1 class="text">!</h1></div>
+        <div class="box15"><h1 class="text">!</h1></div>
+        <div class="box16"><h1 class="text">!</h1></div>
+    </div>
+    <div class="square13">
+        <div class="box4"><h1 class="text">B</h1></div>
+        <div class="box5"><h1 class="text">U</h1></div>
+        <div class="box6"><h1 class="text">Z</h1></div>
+        <div class="box7"><h1 class="text">Z</h1></div>
+    </div>
+    <div class="square14">
+        <div class="box8"><h1 class="text">2</h1></div>
+        <div class="box9"><h1 class="text">0</h1></div>
+        <div class="box10"><h1 class="text">2</h1></div>
+        <div class="box11"><h1 class="text">5</h1></div>
+    </div>
+    <h3 class="text20">при презентации портфолио <br> просим акцентировать внимание<br>на проявление креативности</h3>
+    <div class="square15">
+        <div class="box"><h1 class="text">!</h1></div>
+        <div class="box1"><h1 class="text">?</h1></div>
+        <div class="box2"><h1 class="text">?</h1></div>
+    </div>
+    <div class="containerr">
+        <div class="draw">
+            <canvas class="js-paint"></canvas>
+        </div>
+    </div>
+    <div class="controls">
+        <input type="color" class="js-color-picker" value="#FE6807">
+    </div>
+    <div class="controls1">
+        <input type="range" class="js-line-range" min="1" max="72" value="6">
+    </div>
+    <button id="initButton"><img src="./img/paint.svg" alt=""></button>
+    <div class="square21">
+        <div class="box8"><h1 class="text">!</h1></div>
+        <div class="box9"><h1 class="text">!</h1></div>
+        <div class="box10"><h1 class="text">!</h1></div>
+        <div class="box11"><h1 class="text">!</h1></div>
+        <div class="box37"><h1 class="text">!</h1></div>
+    </div>
+    <div class="sticker1"><img src="./img/sticker1.svg" alt=""></div>
+    <div class="sticker2"><img src="./img/sticker2.svg" alt=""></div>
+    <div class="sticker3"><img src="./img/sticker3.svg" alt=""></div>
+    <div class="sticker4"><img src="./img/sticker4.svg" alt=""></div>
+    <div class="sticker5"><img src="./img/sticker5.svg" alt=""></div>
+    <div class="sticker11"><img src="./img/sticker1.svg" alt=""></div>
+    <div class="sticker22"><img src="./img/sticker2.svg" alt=""></div>
+    <div class="sticker33"><img src="./img/sticker3.svg" alt=""></div>
+    <div class="sticker44"><img src="./img/sticker4.svg" alt=""></div>
+    <div class="sticker55"><img src="./img/sticker5.svg" alt=""></div>
+</div>
+<div class="section5">
+    <div class="buttun4">
+        <button class="button_backkkk" data-ter="section4"><h1 class="text4">←</h1></button>
+        <button class="button_section5"><h1 class="text4">→</h1></button>
+        <button class="pagge8" ><h1 class="text4">?</h1></button>
+    </div>
+    <div class="back1"></div>
+    <h2 class="text21">ВАШ РЕЗУЛЬТАТ</h2>
+    <div class="square16">
+        <div class="box"><h1 class="text">//</h1></div>
+        <div class="box1"><h1 class="text">5</h1></div>
+        <div class="box2"><h1 class="text">7</h1></div>
+    </div>
+    <h2 class="text22">ИЗДАТЕЛЬСТВО СПЛЕТЕН «BUZZ»</h2>
+    <h3 class="text23">рады сообщить, что вы стали частью <br> команды «Издательства сплетен», ждем вас <br>завтра в офисе, чтобы приступить к работе</h3>
+    <div class="square17">
+        <div class="box8"><h1 class="text">2</h1></div>
+        <div class="box9"><h1 class="text">0</h1></div>
+        <div class="box10"><h1 class="text">2</h1></div>
+        <div class="box11"><h1 class="text">5</h1></div>
+    </div>
+    <div class="square18">
+        <div class="box1"><h1 class="text">!</h1></div>
+        <div class="box2"><h1 class="text">!</h1></div>
+    </div>
+    <h3 class="text24">кондратенко ирина <br>Б24ДЗ10</h3>
+    <div class="square19">
+        <div class="box"><h1 class="text">!</h1></div>
+        <div class="box1"><h1 class="text">!</h1></div>
+        <div class="box2"><h1 class="text">!</h1></div>
+    </div>
+    <h3 class="text25">HSE ART AND DESIGN SCHOOL</h3>
+    <div class="laptop">
+        <div class="box36"></div>
+        <h2 class="text26">«BUZZ»</h2>
+        <div class="square20">
+            <button class="boxx"><h1 class="text27">_</h1></button>
+            <button class="boxxx"><h1 class="text28">x</h1></button>
+        </div>
+        <div class="mem"><img id="memImage" src="./img/mem.svg" alt=""></div>
+    </div>
+    <div class="laptop1">
+        <div class="box36"></div>
+        <h2 class="text26">«BUZZ»</h2>
+        <div class="square20">
+            <button class="boxx1"><h1 class="text27">_</h1></button>
+            <button class="boxxx1"><h1 class="text28">x</h1></button>
+        </div>
+        <div class="mem1"><img id="memImage" src="./img/1.gif" alt=""></div>
+    </div>
+    <div class="laptop2">
+        <div class="box36"></div>
+        <h2 class="text26">«BUZZ»</h2>
+        <div class="square20">
+            <button class="boxx2"><h1 class="text27">_</h1></button>
+            <button class="boxxx2"><h1 class="text28">x</h1></button>
+        </div>
+        <div class="mem2"><img id="memImage" src="./img/mem1.svg" alt=""></div>
+    </div>
+    <div class="laptop3">
+        <div class="box36"></div>
+        <h2 class="text26">«BUZZ»</h2>
+        <div class="square20">
+            <button class="boxx3"><h1 class="text27">_</h1></button>
+            <button class="boxxx3"><h1 class="text28">x</h1></button>
+        </div>
+        <div class="mem3"><img id="memImage" src="./img/gif_fyou.gif" alt=""></div>
+    </div>
+    <div class="laptop4">
+        <div class="box36"></div>
+        <h2 class="text26">«BUZZ»</h2>
+        <div class="square20">
+            <button class="boxx4"><h1 class="text27">_</h1></button>
+            <button class="boxxx4"><h1 class="text28">x</h1></button>
+        </div>
+        <div class="mem4"><img id="memImage" src="./img/426.-kimmy.gif" alt=""></div>
+    </div>
+    <div class="laptop5">
+        <div class="box36"></div>
+        <h2 class="text26">«BUZZ»</h2>
+        <div class="square20">
+            <button class="boxx5"><h1 class="text27">_</h1></button>
+            <button class="boxxx5"><h1 class="text28">x</h1></button>
+        </div>
+        <div class="mem5"><img id="memImage" src="./img/mem2.svg" alt=""></div>
+    </div>
+    <div class="laptop6">
+        <div class="box36"></div>
+        <h2 class="text26">«BUZZ»</h2>
+        <div class="square20">
+            <button class="boxx6"><h1 class="text27">_</h1></button>
+            <button class="boxxx6"><h1 class="text28">x</h1></button>
+        </div>
+        <div class="mem6"><img id="memImage" src="./img/michael-clap-2-_1_.gif" alt=""></div>
+    </div>
+    <div class="laptop7">
+        <div class="box36"></div>
+        <h2 class="text26">«BUZZ»</h2>
+        <div class="square20">
+            <button class="boxx7"><h1 class="text27">_</h1></button>
+            <button class="boxxx7"><h1 class="text28">x</h1></button>
+        </div>
+        <div class="mem7"><img id="memImage" src="./img/mem3.svg" alt=""></div>
+    </div>
+    <div class="you"><img src="./img/you.svg" alt=""></div>
+    <div class="hire"><img src="./img/hire.svg" alt=""></div>
+</div>
+
+
+
+</body>
+</html>
