@@ -145,7 +145,52 @@ const uploadDiv = document.getElementById('dropArea');
           }, 100); // 100 миллисекунд
       }
   });
+  //фон
+  const boxes = [
+    document.querySelector('.box200'),
+    document.querySelector('.box201'),
+    document.querySelector('.box202'),
+    document.querySelector('.box203')
+];
 
+const grounds = [
+    document.querySelector('.ground'),
+    document.querySelector('.ground1'),
+    document.querySelector('.ground2'),
+    document.querySelector('.ground3')
+];
+
+boxes.forEach((box, index) => {
+    box.addEventListener('click', () => {
+        // Скрываем все фоны
+        grounds.forEach(ground => {
+            ground.style.display = 'none'; // Скрываем контейнер .ground
+            ground.querySelector('img').style.display = 'none'; // Скрываем изображение внутри .ground
+        });
+
+        // Показываем нужный фон
+        grounds[index].style.display = 'block'; // Показываем контейнер .ground
+        grounds[index].querySelector('img').style.display = 'block'; // Показываем изображение внутри .ground
+    });
+});
+
+
+const progressBar = document.getElementById("progress-bar");
+
+function simulateLoading() {
+    let width = 0;
+    const interval = setInterval(() => {
+        width += 1;
+        progressBar.style.width = width + "%";
+
+        if (width >= 100) {
+            clearInterval(interval);
+            console.log("Загрузка завершена!");
+        }
+    }, 20);
+}
+
+simulateLoading();
 });
 
 
