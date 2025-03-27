@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-
 //ввод текста
-  function createTextInput(containerId, maxLength = 5) {
+    function createTextInput(containerId, maxLength = 5) {
     const container = document.getElementById(containerId);
   
     if (!container) {
@@ -12,10 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputElement = document.createElement('input');
     inputElement.type = 'text';
     inputElement.maxLength = maxLength;
-  
-    //  Добавляем атрибуты id и name
-    inputElement.id = containerId + "Input"; //  Пример: "text1contInput"
-    inputElement.name = containerId + "Input"; //  Пример: "text1contInput"
+    inputElement.id = containerId + "Input"; 
+    inputElement.name = containerId + "Input"; 
   
     container.appendChild(inputElement);
   
@@ -45,9 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //загрузка фото с рабочего стола
 const uploadDiv = document.getElementById('dropArea');
-    const fileInput = document.getElementById('file-input');
-    const uploadedImage = document.getElementById('uploaded-image');
-    const defaultImage = document.querySelector('.default-image');
+const fileInput = document.getElementById('file-input');
+const uploadedImage = document.getElementById('uploaded-image');
+const defaultImage = document.querySelector('.default-image');
 
     uploadDiv.addEventListener('click', function() {
       fileInput.click();
@@ -77,7 +74,7 @@ const uploadDiv = document.getElementById('dropArea');
       let isDragging = false;
       let currentBuilding = null;
       let cloneInterval = null;
-      const cloneStep = 50; // Шаг в пикселях для дублирования
+      const cloneStep = 50; 
       let lastClonePosition = { x: 0, y: 0 };
   
       buildings.forEach(building => {
@@ -85,11 +82,7 @@ const uploadDiv = document.getElementById('dropArea');
               isDragging = true;
               currentBuilding = building;
               building.classList.add('dragging');
-  
-              // Начальная позиция для клонирования
               lastClonePosition = { x: e.clientX, y: e.clientY };
-  
-              // Запускаем интервал для клонирования
               cloneInterval = setInterval(() => {
                   if (!isDragging) return;
   
@@ -102,7 +95,7 @@ const uploadDiv = document.getElementById('dropArea');
                       createClone(building, e.clientX, e.clientY);
                       lastClonePosition = { x: e.clientX, y: e.clientY };
                   }
-              }, 50); // Интервал в миллисекундах (частота клонирования)
+              }, 50); 
           });
       });
   
@@ -129,68 +122,53 @@ const uploadDiv = document.getElementById('dropArea');
       });
   
       function createClone(originalBuilding, x, y) {
-          const clone = originalBuilding.cloneNode(true); // Создаем глубокую копию
+          const clone = originalBuilding.cloneNode(true); 
           clone.classList.add('clone');
-          clone.classList.remove('dragging');  // Убираем класс dragging у клона
+          clone.classList.remove('dragging'); 
           document.body.appendChild(clone);
-  
-          // Устанавливаем позицию клона
+
           clone.style.left = x - originalBuilding.offsetWidth / 2 + 'px';
           clone.style.top = y - originalBuilding.offsetHeight / 2 + 'px';
           clone.style.pointerEvents = 'none';
-  
-          // Добавляем небольшую задержку, чтобы клон не мешал событиям мыши сразу
+
           setTimeout(() => {
               clone.style.pointerEvents = 'auto';
-          }, 100); // 100 миллисекунд
+          }, 100);
       }
   });
-  //фон
-  const boxes = [
-    document.querySelector('.box200'),
-    document.querySelector('.box201'),
-    document.querySelector('.box202'),
-    document.querySelector('.box203')
+  
+//фон
+const boxes = [
+  document.querySelector('.box200'),
+  document.querySelector('.box201'),
+  document.querySelector('.box202'),
+  document.querySelector('.box203')
 ];
 
 const grounds = [
-    document.querySelector('.ground'),
-    document.querySelector('.ground1'),
-    document.querySelector('.ground2'),
-    document.querySelector('.ground3')
+  document.querySelector('.ground'),
+  document.querySelector('.ground1'),
+  document.querySelector('.ground2'),
+  document.querySelector('.ground3')
 ];
 
 boxes.forEach((box, index) => {
-    box.addEventListener('click', () => {
-        // Скрываем все фоны
-        grounds.forEach(ground => {
-            ground.style.display = 'none'; // Скрываем контейнер .ground
-            ground.querySelector('img').style.display = 'none'; // Скрываем изображение внутри .ground
+  box.addEventListener('click', () => {
+      grounds.forEach(ground => {
+          ground.style.display = 'none'; 
+          ground.querySelector('img').style.display = 'none'; 
+      });
+
+      grounds[index].style.display = 'block'; 
+      grounds[index].querySelector('img').style.display = 'block'; 
+  });
+});  
+
+//подпись
+const podpicDiv = document.querySelector('.podpic');
+        const podpic1Div = document.querySelector('.podpic1');
+
+        podpicDiv.addEventListener('click', () => {
+            podpic1Div.style.display = 'block'; 
         });
-
-        // Показываем нужный фон
-        grounds[index].style.display = 'block'; // Показываем контейнер .ground
-        grounds[index].querySelector('img').style.display = 'block'; // Показываем изображение внутри .ground
-    });
-});
-
-
-const progressBar = document.getElementById("progress-bar");
-
-function simulateLoading() {
-    let width = 0;
-    const interval = setInterval(() => {
-        width += 1;
-        progressBar.style.width = width + "%";
-
-        if (width >= 100) {
-            clearInterval(interval);
-            console.log("Загрузка завершена!");
-        }
-    }, 20);
-}
-
-simulateLoading();
-});
-
-
+})

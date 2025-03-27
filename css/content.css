@@ -3,27 +3,7 @@ body{
     width: 100%;
     overflow: hidden;
 }
-#progress-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 0.5vw; /* 5px -> 0.5vw (примерно для viewport width 1000px) */
-    background-color: #ddd;
-    z-index: 1000;
-}
-
-#progress-bar {
-    width: 0%;
-    height: 100%;
-    background-color: #4CAF50;
-}
-
-.content {
-    padding: 2vw; /* 20px -> 2vw */
-    text-align: center;
-}
-/* первый экран*/
+/*первый экран*/
 .square{
     position: absolute;
     width: 7.5vw;
@@ -365,8 +345,7 @@ body{
     pointer-events: none; 
 }
 
-/* второй экран*/
-
+/*второй экран*/
 .back{
     position: absolute;
     background-color: #FE6807;
@@ -575,22 +554,21 @@ body{
     cursor: pointer;
     overflow: hidden;
     z-index: 1;
-    display: flex;         /* Используем flexbox для центрирования */
-    justify-content: center; /* Центрирование по горизонтали */
-    align-items: center;     /* Центрирование по вертикали */
+    display: flex;   
+    justify-content: center; 
+    align-items: center;     
 }
-
 #dropArea img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;      /* Для перекрытия default-image */
+    position: absolute; 
     top: 0;
     left: 0;
 }
 #uploaded-image {
-    display: none; /* Изначально скрываем загруженное изображение */
-  }
+    display: none; 
+}
 .square7{
     position: absolute;
     width: 13.6vw;
@@ -729,7 +707,7 @@ body{
     width: 16.7vw;
 }
 .text1conteiner input {
-    position: absolute; /* Добавлено */
+    position: absolute; 
     font-size: 1.6vw;
     font-family: "Arimo-Regular";
     background-color: #EEF5DB;
@@ -752,7 +730,7 @@ body{
     width: 10.9vw;
 }
 .text2conteiner input {
-    position: absolute; /* Добавлено */
+    position: absolute; 
     font-size: 1.6vw;
     font-family: "Arimo-Regular";
     background-color: #EEF5DB;
@@ -775,7 +753,7 @@ body{
     width: 6.2vw;
 }
 .text3conteiner input {
-    position: absolute; /* Добавлено */
+    position: absolute; 
     font-size: 1.6vw;
     font-family: "Arimo-Regular";
     background-color: #EEF5DB;
@@ -798,7 +776,7 @@ body{
     width: 1.1vw;
 }
 .text4conteiner input {
-    position: absolute; /* Добавлено */
+    position: absolute; 
     font-size: 1.6vw;
     font-family: "Arimo-Regular";
     background-color: #EEF5DB;
@@ -812,33 +790,6 @@ body{
 }
 .text4conteiner:hover {
     cursor: text;
-}
-.oblact {
-    width: 28.6vw;
-    height: 5.05vw;
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    cursor: crosshair;
-    z-index: 6;
-}
-
-.pain {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 6;
-}
-.podpic{
-    position: absolute;
-    width: 28.6vw;
-    height: 5.33vw;
-    border: 0.115vw solid #323144;
-    margin-left: 29vw;
-    margin-top: 36.3vw;
-    cursor: pointer;
 }
 .box200{
     position: absolute;
@@ -907,6 +858,29 @@ body{
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+}
+.podpic{
+    position: absolute;
+    width: 28.6vw;
+    height: 5.33vw;
+    border: 0.115vw solid #323144;
+    margin-left: 29vw;
+    margin-top: 36.3vw;
+    cursor: pointer;
+    z-index: 5;
+}
+.podpic1{
+    position: absolute;
+    display: none;
+    width: 35vw;
+    height: 8vw;
+    margin-left: 27vw;
+    margin-top: 35vw;
+    z-index: 4;
+}
+.podpic1 img{
+    width: 100%;
+    height: 100%;
 }
 .background1{
     position: absolute;
@@ -1020,12 +994,6 @@ body{
     border: 0.115vw solid #323144;
     margin-left: 21.6vw;
 }
-.lin{
-    position: absolute;
-    background-color: aqua;
-    width: 1.9vw;
-    height: 1.9vw;
-}
 .liner1{
     border: 0.015vw solid #323144;
     position: absolute;
@@ -1059,7 +1027,7 @@ body{
     rotate: 90deg;
 }
 
-/*3 раздел*/
+/*третий экран*/
 .button_backk{
     position: absolute;
     width: 2vw;
@@ -1211,7 +1179,7 @@ body{
     margin-left: 3.3vw;
     z-index: 2;
     width: 21.5%;
-    user-select: none; /* Предотвращает выделение текста при перетаскивании */
+    user-select: none; 
 }
   
 .building1 img {
@@ -1219,7 +1187,6 @@ body{
     height: 100%;
     object-fit: cover;
     user-select: none;
-    /* pointer-events: none; <- УДАЛИТЕ ЭТУ СТРОКУ */
 }
 .building2{
     position: absolute;
@@ -1298,7 +1265,7 @@ body{
     width: 10.6%;
 }
   
-/*section 4*/
+/*четвертый экран*/
 .containerr {
     position: absolute;
     margin-top: 10vw;
@@ -1310,7 +1277,6 @@ body{
     overflow: hidden;
     z-index: 2;
 }
-
 .draw {
     position: absolute;
     opacity: 80%;
@@ -1319,7 +1285,6 @@ body{
     z-index: 2;
     box-sizing: border-box;
 }
-
 .js-paint {
     position: absolute;
     top: 0;
@@ -1328,7 +1293,6 @@ body{
     height: 100%;
     z-index: 2;
 }
-
 .controls {
     position: absolute;
     margin-top: 8.7vw;
@@ -1338,14 +1302,12 @@ body{
     z-index: 5;
     overflow: hidden;
 }
-
 .js-color-picker {
     margin-top: -1vw;
     margin-left: -1vw;
     width: 13vw;
     height: 6vw;
 }
-
 .controls1 {
     position: absolute;
     margin-top: 11.5vw;
@@ -1354,7 +1316,6 @@ body{
     height: 3vw;
     z-index: 6;
 }
-
 .js-line-range {
     width: 11vw;
     height: 3vw;
@@ -1690,7 +1651,7 @@ body{
     z-index: 3;
 }
 
-/* section5*/
+/*пятый экран*/
 .buttun4{
     position: absolute;
     margin-top: 6.6vw;

@@ -47,6 +47,67 @@ document.addEventListener('DOMContentLoaded', () => {
       showSection('section2');
 
 
+//знаки ?
+let predictButton = document.getElementById("pagge2");
+let help = document.querySelector(".help"); 
+let closeButton = document.querySelector(".close");
+
+predictButton.addEventListener("click", function() {
+  help.style.display = "block";
+});
+
+closeButton.addEventListener("click", function() {
+  help.style.display = "none";
+});
+
+let predictButton1 = document.getElementById("pagge5");
+let help1 = document.querySelector(".help1"); 
+let closeButton1 = document.querySelector(".close1"); 
+
+predictButton1.addEventListener("click", function() {
+  help1.style.display = "block";
+});
+
+closeButton1.addEventListener("click", function() {
+  help1.style.display = "none";
+});
+
+let predictButton2 = document.getElementById("pagge6");
+let help2 = document.querySelector(".help2"); 
+let closeButton2 = document.querySelector(".close2"); 
+
+predictButton2.addEventListener("click", function() {
+  help2.style.display = "block";
+});
+
+closeButton2.addEventListener("click", function() {
+  help2.style.display = "none";
+});
+
+let predictButton3 = document.getElementById("pagge7");
+let help3 = document.querySelector(".help3");
+let closeButton3 = document.querySelector(".close3");
+
+predictButton3.addEventListener("click", function() {
+  help3.style.display = "block";
+});
+
+closeButton3.addEventListener("click", function() {
+  help3.style.display = "none";
+});
+
+let predictButton4 = document.getElementById("pagge8");
+let help4 = document.querySelector(".help4"); 
+let closeButton4 = document.querySelector(".close4"); 
+
+predictButton4.addEventListener("click", function() {
+  help4.style.display = "block";
+});
+
+closeButton4.addEventListener("click", function() {
+  help4.style.display = "none";
+});
+
 
 //перемещение
 let draggableElements = document.querySelectorAll(".chek, .title1, .title2");
@@ -59,7 +120,7 @@ draggableElements.forEach(function (element) {
     element.addEventListener("mousedown", function (event) {
         event.preventDefault();
         isDragging = true;
-        element.style.cursor = 'grabbing'; //курсор
+        element.style.cursor = 'grabbing';
 
         initialPosition.left = element.offsetLeft;
         initialPosition.top = element.offsetTop;
@@ -104,66 +165,5 @@ draggableElements.forEach(function (element) {
   element.addEventListener("mouseout", function() {
       element.style.cursor = 'default'; 
   });
-});
-
-//знаки ?
-let predictButton = document.getElementById("pagge2");
-let help = document.querySelector(".help"); // Исправлено: Используем querySelector для класса
-let closeButton = document.querySelector(".close"); // Исправлено: Используем querySelector для класса
-
-predictButton.addEventListener("click", function() {
-  help.style.display = "block";
-});
-
-closeButton.addEventListener("click", function() {
-  help.style.display = "none";
-});
-
-let predictButton1 = document.getElementById("pagge5");
-let help1 = document.querySelector(".help1"); // Исправлено: Используем querySelector для класса
-let closeButton1 = document.querySelector(".close1"); // Исправлено: Используем querySelector для класса
-
-predictButton1.addEventListener("click", function() {
-  help1.style.display = "block";
-});
-
-closeButton1.addEventListener("click", function() {
-  help1.style.display = "none";
-});
-
-let predictButton2 = document.getElementById("pagge6");
-let help2 = document.querySelector(".help2"); // Исправлено: Используем querySelector для класса
-let closeButton2 = document.querySelector(".close2"); // Исправлено: Используем querySelector для класса
-
-predictButton2.addEventListener("click", function() {
-  help2.style.display = "block";
-});
-
-closeButton2.addEventListener("click", function() {
-  help2.style.display = "none";
-});
-
-let predictButton3 = document.getElementById("pagge7");
-let help3 = document.querySelector(".help3"); // Исправлено: Используем querySelector для класса
-let closeButton3 = document.querySelector(".close3"); // Исправлено: Используем querySelector для класса
-
-predictButton3.addEventListener("click", function() {
-  help3.style.display = "block";
-});
-
-closeButton3.addEventListener("click", function() {
-  help3.style.display = "none";
-});
-
-let predictButton4 = document.getElementById("pagge8");
-let help4 = document.querySelector(".help4"); // Исправлено: Используем querySelector для класса
-let closeButton4 = document.querySelector(".close4"); // Исправлено: Используем querySelector для класса
-
-predictButton4.addEventListener("click", function() {
-  help4.style.display = "block";
-});
-
-closeButton4.addEventListener("click", function() {
-  help4.style.display = "none";
 });
 })

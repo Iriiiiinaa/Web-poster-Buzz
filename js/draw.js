@@ -8,33 +8,28 @@ document.addEventListener('DOMContentLoaded', function() {
     let x = 0, y = 0;
     let isMouseDown = false;
 
-    // Функция инициализации Canvas
     function initializeCanvas() {
         if (!drawContext) {
             console.error("Не удалось получить контекст Canvas!");
             return;
         }
 
-        // Устанавливаем размеры canvas
         const rect = paintCanvas.parentElement.getBoundingClientRect();
         paintCanvas.width = rect.width;
         paintCanvas.height = rect.height;
         console.log("Canvas initialized: width=" + paintCanvas.width + ", height=" + paintCanvas.height);
 
-        // Настройка стилей рисования
         drawContext.lineCap = 'round';
         drawContext.strokeStyle = colorPicker.value;
         drawContext.lineWidth = (parseFloat(lineWidthRange.value) / 72) * paintCanvas.width * 0.1;
 
         console.log("Canvas styles set: color=" + drawContext.strokeStyle + ", lineWidth=" + drawContext.lineWidth);
 
-        // Слушатели событий (Mouse)
         paintCanvas.addEventListener('mousedown', startDrawing);
         paintCanvas.addEventListener('mousemove', drawLine);
         paintCanvas.addEventListener('mouseup', stopDrawing);
         paintCanvas.addEventListener('mouseout', stopDrawing);
 
-        // Слушатели событий (Touch)
         paintCanvas.addEventListener('touchstart', startDrawingTouch);
         paintCanvas.addEventListener('touchmove', drawLineTouch);
         paintCanvas.addEventListener('touchend', stopDrawingTouch);
@@ -43,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Event listeners added");
     }
 
-    // Функции рисования
     const stopDrawing = () => { isMouseDown = false; };
 
     const startDrawing = event => {
@@ -100,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
         isMouseDown = false;
     };
 
-    // Обработчики событий для изменения цветаи толщины
             colorPicker.addEventListener('change', event => {
                 drawContext.strokeStyle = event.target.value;
                 console.log("Color changed to: " + drawContext.strokeStyle);
@@ -112,10 +105,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log("Line width changed to: " + drawContext.lineWidth);
             });
 
-            // При нажатии на кнопку инициализируем Canvas
             if (initButton) {
                 initButton.addEventListener('click', initializeCanvas);
             } else {
                 console.error("Кнопка с ID 'initButton' не найдена в DOM!");
             }
-        });
+});

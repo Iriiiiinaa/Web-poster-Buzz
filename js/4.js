@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-        let draggableElements = document.querySelectorAll(".sticker1, .sticker2, .sticker3, .sticker4, .sticker5"); // REMOVE TRAILING COMMA
+        let draggableElements = document.querySelectorAll(".sticker1, .sticker2, .sticker3, .sticker4, .sticker5"); 
 
       draggableElements.forEach(function (element) {
           let isDragging = false;
@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
           let initialPosition = { left: 0, top: 0 };
 
           element.addEventListener("mousedown", function (event) {
-              //event.preventDefault(); // TRY COMMENTING THIS OUT TEMPORARILY
               isDragging = true;
-              element.style.cursor = 'grabbing'; //курсор
+              element.style.cursor = 'grabbing'; 
 
               initialPosition.left = element.offsetLeft;
               initialPosition.top = element.offsetTop;

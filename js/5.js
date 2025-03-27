@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-// Первый ноутбук (.laptop)
+// Первый ноутбук 
 const laptop = document.querySelector('.laptop');
 const memImage = document.querySelector('.mem img');
 const boxx = document.querySelector('.boxx');
@@ -16,7 +16,7 @@ boxxx.addEventListener('click', () => {
     memImage.style.display = 'none'; 
 });
 
-// Второй ноутбук (.laptop1)
+// Второй ноутбук 
 const laptop1 = document.querySelector('.laptop1');
 const memImage1 = document.querySelector('.mem1 img');
 const boxx1 = document.querySelector('.boxx1');

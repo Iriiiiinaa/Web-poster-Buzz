@@ -85,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const handleMouseDown = (event) => {
             if (animationDone || event.target !== image) return;
-
             isDragging = true;
             document.body.style.cursor = 'grabbing';
             building.style.cursor = 'grabbing';
