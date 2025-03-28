@@ -659,6 +659,9 @@ body{
     color:#323144;
     line-height: 1.2vw;
 }
+.cont{
+    position: absolute;
+}
 .text12{
     position: absolute;
     margin-top: 10.1vw;
@@ -1783,7 +1786,7 @@ body{
     rotate: -90deg;
     margin-top: 42.5vw;
     margin-left: 0.3vw;
-    z-index: 2;
+    z-index: 4;
 }
 .text24{
     position: absolute;
