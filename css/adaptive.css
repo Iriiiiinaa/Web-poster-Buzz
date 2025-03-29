@@ -933,7 +933,7 @@
 } 
 @media screen and (max-width: 414px) and (orientation: portrait) { 
     .body{
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
     .square{
         width: 23vw;
