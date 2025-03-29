@@ -1,29 +1,5 @@
 /* 
-  От 1441px до 1920px 
-@media screen and (min-width: 1441px) and (max-width: 1920px) and (orientation: landscape) {
-   
-}
- 
- 
 
-@media screen and (min-width: 769px) and (max-width: 1440px) and (orientation: landscape) {
-    .text3{
-        position: absolute;
-        margin-top: 20vw;
-        margin-left: 2.8vw;
-        font-size: 1.05vw;
-        font-family: "Arimo-Regular";
-        height: 2.15vw;
-        color:#FE6807;
-        line-height: 1.2vw;
-        z-index: 2;
-    }
-}
-
-
-@media screen and (max-width: 414px) and (orientation: portrait) { 
- 
-} 
  
 @media screen and (max-width: 360px) and (orientation: portrait) { 
    
@@ -254,7 +230,7 @@
         height: 2.7vw;
     }
     .buttun3{
-        margin-top: 7vw;
+        margin-top: 6.6vw;
         margin-left: 89.64vw;
         width: 8vw;
         height: 2.7vw;
@@ -953,5 +929,877 @@
         width: 14.5vw;
         margin-top: 121vw;
         margin-left: 86.5vw;
+    }
+} 
+@media screen and (max-width: 414px) and (orientation: portrait) { 
+    .square{
+        width: 23vw;
+        height: 4.8vw;
+        margin-top: 13vw;
+        margin-left: -5vw;
+    }
+    .box{
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+    .box1{
+        width: 5.5vw;
+        height: 5.5vw;
+        margin-left: 27%;
+    }
+    .box2{
+        width: 5.5vw;
+        height: 5.5vw;
+        margin-left: 54%;
+    }
+    .text{
+        font-size: 4.5vw;
+        margin-top: 2vw;
+    }
+    .square1{
+        width: 24.5vw;
+        rotate: 90deg;
+        height: 4.8vw;
+        margin-top: 19vw;
+        margin-left: 81vw;
+        z-index: 2;
+    }
+    .square3{
+        display: none;
+    }
+    .square4{
+        width: 28vw;
+        height: 4.8vw;
+        margin-top: 210vw;
+        margin-left: 79vw;
+        z-index: 2;
+    }
+    .box3{
+        width: 5.5vw;
+        height: 5.5vw;
+        border: 0.115vw solid #323144;
+        margin-left: 1%;
+    }
+    .box4{
+        width: 5.5vw;
+        height: 5.5vw;
+        border: 0.115vw solid #323144;
+        margin-left: 36%;
+    }
+    .box5{
+        width: 5.5vw;
+        height: 5.5vw;
+        border: 0.115vw solid #323144;
+        margin-left: 61%;
+    }
+    .box6{
+        width: 5.5vw;
+        height: 5.5vw;
+        border: 0.115vw solid #323144;
+        margin-left: 86%;
+    }
+    .box7{
+        width: 5.5vw;
+        height: 5.5vw;
+        border: 0.115vw solid #323144;
+        margin-left: 111%;
+    }
+    .square2{
+        width: 28vw;
+        rotate: 90deg;
+        height: 4.8vw;
+        margin-top: 194vw;
+        margin-left: 79.4vw;
+    }
+    .box12{
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+    .box13{
+        width: 5.5vw;
+        height: 5.5vw;
+        margin-left: 22%;
+    }
+    .box14{
+        display: none;
+    }
+    .box15{
+        display: none;
+    }
+    .box17{
+        display: none;
+    }
+    .box18{
+        width: 5.5vw;
+        height: 5.5vw;
+        margin-left: 47%;
+    }
+    .box19{
+        width: 5.5vw;
+        height: 5.5vw;
+        margin-left: 76%;
+    }
+    .box20{
+        width: 5.5vw;
+        height: 5.5vw;
+        margin-left: 105%;
+    }
+    .box21{
+        width: 5.5vw;
+        height: 5.5vw;
+        margin-left: 135%;
+    }
+    .box22{
+        display: none;
+    }
+    .box16{
+       display: none;
+    }
+    .square5{
+        rotate: 90deg;
+        width: 28vw;
+        height: 4.8vw;
+        margin-top: 35.5vw;
+        margin-left: 79.5vw;
+    }
+    .square6{
+        rotate: 90deg;
+        width: 28vw;
+        height: 4.8vw;
+        margin-top: 21vw;
+        margin-left: 79.5vw;
+    }
+    .box8{
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+    .box9{
+        width: 5.5vw;
+        height: 5.5vw;
+        margin-left: 22%;
+    }
+    .box10{
+        width: 5.5vw;
+        height: 5.5vw;;
+        margin-left: 44%;
+    }
+    .box11{
+        width: 5.5vw;
+        height: 5.5vw;
+        margin-left: 66%;
+    }
+    .text1{
+        width: 60vw;
+        margin-top: 8.3vw;
+        margin-left: 12vw;
+        font-size: 5vw;
+        line-height: 5.2vw;
+    }
+    .text2{
+        margin-top: 20vw;
+        margin-left: 12vw;
+        font-size: 3.9vw;
+        line-height: 4vw;
+    }
+    .text3{
+        margin-top: 195vw;
+        margin-left: 4vw;
+        font-size: 3.9vw;
+        line-height: 4vw;
+    }
+    .chek{
+        margin-top: 50vw;
+        margin-left: 1vw;
+        rotate: -6.6deg;
+        width: 95%;
+    }
+    .title1{
+        margin-top: 119vw;
+        margin-left: 2vw;
+        width: 97%;
+    }
+    .title2{
+        margin-top: 145vw;
+        margin-left: 27vw;
+        width: 68%;
+    }
+    .text4{
+        margin-top: 0.6vw;
+        margin-left: 0.1vw;
+        font-size: 5vw;
+        line-height: 2.2vw;
+    }
+    .buttun{
+        margin-top: 35vw;
+        margin-left: 12vw;
+        width: 15vw;
+        height: 2.7vw;
+    }
+    .buttun1{
+        margin-top: 47vw;
+        margin-left: 12vw;
+        width: 15vw;
+        height: 2.7vw;
+    }
+    .buttun2{
+        margin-top: 35vw;
+        margin-left: 12vw;
+        width: 15vw;
+        height: 2.7vw;
+    }
+    .buttun3{
+        margin-top: 16.5vw;
+        margin-left: 12vw;
+        width: 15vw;
+        height: 2.7vw;
+    }
+    .buttun4{
+        margin-top: 35vw;
+        margin-left: 12vw;
+        width: 15vw;
+        height: 2.7vw;
+    }
+    .button_bck{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: -7.6vw;
+    }
+    .button_section1{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: -1.2vw;
+    }
+    #pagge2{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: 7vw;
+    }
+    .button_back{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: -7.6vw;
+    }
+    .button_section2{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: -1.2vw;
+    }
+    #pagge5{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: 7vw;
+    }
+    .button_backk{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: -7.6vw;
+    }
+    .button_section3{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: -1.2vw;
+    }
+    #pagge6{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: 7vw;
+    }
+    .button_backkk{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: -7.6vw;;
+    }
+    .button_section4{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: -1.2vw;
+    }
+    #pagge7{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: 7vw;
+    }
+    .button_backkkk{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: -7.6vw;
+    }
+    .button_section5{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: -1.2vw;
+    }
+    #pagge8{
+        width: 5.9vw;
+        height: 5.9vw;
+        margin-left: 7vw;
+    }
+    .text7{
+        width: 60vw;
+        margin-top: 8.3vw;
+        margin-left: 12vw;
+        font-size: 5vw;
+        line-height: 5.2vw;
+    }
+    .text16{
+        width: 60vw;
+        margin-top: 8.3vw;
+        margin-left: 12vw;
+        font-size: 5vw;
+        line-height: 5.2vw;
+    }
+    .text18{
+        display: none;
+    }
+    .text21{
+        width: 60vw;
+        margin-top: 8.3vw;
+        margin-left: 12vw;
+        font-size: 5vw;
+        line-height: 5.2vw;
+    }
+    .text22{
+        display: none;
+    }
+    .text8{
+        width: 60vw;
+        margin-top: 20vw;
+        margin-left: 12vw;
+        font-size: 3.9vw;
+        line-height: 4vw;
+    }
+    .text17{
+        margin-top: 17vw;
+        margin-left: 12vw;
+        font-size: 3.9vw;
+        line-height: 4vw;
+    }
+    .text23{
+        margin-top: 17vw;
+        margin-left: 12vw;
+        font-size: 3.9vw;
+        line-height: 4vw;
+    }
+    .text24{
+        margin-top: 194vw;
+        margin-left: 12vw;
+        font-size: 3.9vw;
+        line-height: 4vw;
+    }
+    .text25{
+        margin-top: 203.5vw;
+        margin-left: 12vw;
+        font-size: 3.9vw;
+        line-height: 4vw;
+    }
+    .text5{
+        display: none;
+    }
+    .text20{
+        margin-top: 196vw;
+        margin-left: 4vw;
+        font-size: 3.9vw;
+        line-height: 4vw;
+    }
+    .text6{
+        margin-top: 199vw;
+        margin-left: 4vw;
+        font-size: 3.9vw;
+        line-height: 4vw;
+    }
+    .box200{
+        width: 28vw;
+        height: 17vw;
+        margin-left: 2vw;
+        margin-top: 160vw;
+        rotate: 90deg;
+    }
+    .box201{
+        width: 28vw;
+        height: 17vw;
+        margin-left: 23.5vw;
+        margin-top: 160vw;
+        rotate: 90deg;
+    }
+    .box202{
+        width: 28vw;
+        height: 17vw;
+        margin-left: 44.5vw;
+        margin-top: 160vw;
+        rotate: 90deg;
+    }
+    .box203{
+        width: 28vw;
+        height: 17vw;
+        margin-left: 65vw;
+        margin-top: 160vw;
+        rotate: 90deg;
+    }
+    .card{
+        width: 90vw;
+        height: 87vw;
+        margin-top: 62vw;
+        margin-left: 5vw;
+    }
+    #dropArea {
+        width: 68vw;
+        height: 25.5vw;
+        margin-top: 2.5vw;
+        margin-left: 11vw;  
+    }
+    .square7{
+        width: 22vw;
+        height: 2.4vw;
+        margin-top: 2.5vw;
+        margin-left: 75vw;
+        rotate: 90deg;
+    }
+    .liner{
+        display: none;
+    }
+    .text9{
+        margin-top: 30vw;
+        margin-left: 4.2vw;
+        font-size: 5vw;
+    }
+    .square8{
+        margin-top: 13.5vw;
+        margin-left: 67.5vw;
+    }
+    .text10{
+        margin-top: 36vw;
+        margin-left: 4.2vw;
+        font-size: 3.9vw;
+    }
+    .text11{
+        margin-top: 43.5vw;
+        margin-left: 4.2vw;
+        font-size: 4vw;
+    }
+    .text12{
+        margin-top: 49vw;
+        margin-left: 4.2vw;
+        font-size: 4vw;
+    }
+    .text13{
+        margin-top: 54.5vw;
+        margin-left: 4.2vw;
+        font-size: 4vw;
+    }
+    .text14{
+        margin-top: 60vw;
+        margin-left: 4.2vw;
+        font-size: 4vw;
+    }
+    .text15{
+        margin-top: 65.5vw;
+        margin-left: 4.2vw;
+        font-size: 4vw;
+    }
+    .cont{
+        margin-top: 10vw;
+        margin-left: 30vw;
+    }
+    .log{
+        rotate: -90deg;
+        margin-top: 1vw;
+        margin-left: -17vw;
+    }
+    .podpic{
+        width: 80vw;
+        height: 11vw;
+        margin-left: 9.8vw;
+        margin-top: 133vw;
+    }
+    .box24{
+        display: none;
+    }
+    .box25{
+        display: none;
+    }
+    .box26{
+        display: none;
+    }
+    .box27{
+        display: none;
+    }
+    .box28{
+        display: none;
+    }
+    .box29{
+        display: none;
+    }
+    .box30{
+        display: none;
+    }
+    .box31{
+        display: none;
+    }
+    .box32{
+        display: none;
+    }
+    .box33{
+        display: none;;
+    }
+    .liner1{
+        height: 61vw;
+        margin-left: 54vw;
+        margin-top: 15.7vw;
+    }
+    .liner2{
+        height: 46vw;
+        margin-left: 61.5vw;
+        margin-top: 28.3vw;
+    }
+    .liner3{
+        height: 34.5vw;
+        margin-left: 67vw;
+        margin-top: 39.5vw;
+    }
+    .liner4{
+        height: 22vw;
+        margin-left: 73.2vw;
+        margin-top: 51.5vw;
+    }
+    .podpic1{
+        width: 60vw;
+        height: 15vw;
+        height: 12vw;
+        margin-left: 25vw;
+        margin-top: 132vw;
+    }
+    .background1{
+        width: 100vw;
+        height: 230vw;
+        z-index: 2;
+    }
+    .text1conteiner {
+        position: absolute;
+        margin-top: -1.7vw;
+        margin-left: 9vw;
+        padding: 2vw;
+        height: 5vw;
+        width: 29vw;
+    }
+    .text1conteiner input {
+        font-size: 2.7vw;
+    }
+    .text2conteiner {
+        position: absolute;
+        margin-top: 3.2vw;
+        margin-left: 18.3vw;
+        padding: 2vw;
+        height: 5vw;
+        width: 20vw;
+    }
+    .text2conteiner input {
+        font-size: 2.7vw;
+    }
+    .text3conteiner {
+        position: absolute;
+        margin-top: 7.6vw;
+        margin-left: 27vw;
+        padding: 2vw;
+        height: 5vw;
+        width: 15vw;
+    }
+    .text3conteiner input {
+        font-size: 2.7vw;
+    }
+    .text4conteiner {
+        position: absolute;
+        margin-top: 12.6vw;
+        margin-left: 34vw;
+        padding: 2vw;
+        height: 5vw;
+        width: 5vw;
+    }
+    .text4conteiner input {
+        font-size: 2.7vw;
+    }
+    .square9{
+        width: 28vw;
+        margin-top: 18vw;
+        margin-left: -8.5vw;
+        z-index: 3;
+        rotate: -90deg;
+    }
+    .buzz{
+        display: none;
+    }
+    .square11{
+        width: 23vw;
+        margin-top: 201.5vw;
+        margin-left: 4vw;
+    }
+    .square10{
+        width: 28vw;
+        margin-top: 201.5vw;
+        margin-left: 71vw;
+    }
+    .city{
+        margin-top: 50vw;
+        margin-left: -70vw;
+        width: 280%;
+    }
+    .box34{
+        height: 50vw;
+    }
+    .building1 {
+       display: none;
+    }
+    .building2{
+        margin-top: 156vw;
+        margin-left: 49vw;
+        width: 43%;
+    }
+    .building3{
+        margin-top: 130vw;
+        margin-left: 28vw;
+        width: 23%;
+    }
+    .building4{
+        display: none;
+    }
+    .building5{
+        margin-top: 84.5vw;
+        margin-left: 60vw;
+        width: 28%;
+    }
+    .text19{
+        display: none;
+    }
+    .square15{
+        width: 22.8vw;
+        margin-top: 200vw;
+        margin-left: 83.5vw;
+    }
+    .fence{
+        width: 270%;
+        margin-top: -26vw;
+        margin-left: -75vw;
+        z-index: 1;
+    }
+    .containerr {
+        opacity: 50%;
+        margin-top: 70vw;
+        margin-left: 0vw;
+        height: 105vw;
+        width: 150vw;
+    }
+    .box35{
+        width: 90.5vw;
+        height: 30vw;
+        margin-top: 26vw;
+        margin-left: 4.5vw;
+    }
+    .square21, .square12{
+        display: none;
+    }
+    .controls {
+        margin-top: 30vw;
+        margin-left: 7vw;
+        width: 30vw;
+        height: 10vw;
+    }
+    .controls1 {
+        margin-top: 43vw;
+        margin-left: 7vw;
+        width: 30vw;
+        height: 3vw;
+    }
+    .js-color-picker {
+        width: 50vw;
+        height: 28vw;
+        margin-top: -5vw;
+        margin-left: -5vw;
+    }
+    .js-line-range {
+        width: 30vw;
+    }
+    .sticker5, .sticker55{
+        display: none;
+    }
+    .sticker1, .sticker11{
+        margin-top: 28vw;
+        margin-left: 38vw;
+        width: 20%;
+    }
+    .sticker2, .sticker22{
+        margin-top: 28vw;
+        margin-left: 58vw;
+        width: 12%;
+    }
+    .sticker3, .sticker33{
+        display: none;
+    }
+    .sticker4, .sticker44{
+        margin-top: 28vw;
+        margin-left: 70vw;
+        width: 25%;
+    }
+    .square14{
+        display: none;
+    }
+    .square13{
+        rotate: 0deg;
+        width: 25vw;
+        margin-top: 8vw;
+        margin-left: 4vw;
+    }
+    #initButton{
+        rotate: -90deg;
+        width: 5.5vw;
+        height: 5.5vw;
+        margin-top: 8vw;
+        margin-left: 4vw;
+    }
+    .laptop{
+        display: none;
+    }
+    .laptop1{
+        width: 54vw;
+        height: 32vw;
+        margin-top: 58vw;
+        margin-left: 10vw;
+    }
+    .laptop2{
+        display: none;
+    }
+    .laptop6{
+        display: none;
+    }
+    .box36{
+        height: 5vw;
+    }
+    .laptop3{
+        width: 54vw;
+        height: 32vw;
+        margin-top: 82vw;
+        margin-left: 3vw;
+    }
+    .laptop4{
+        width: 54vw;
+        height: 32vw;
+        margin-top: 100vw;
+        margin-left: 50vw;
+    }
+    .laptop5{
+        display: none;
+    }
+    .laptop7{
+        width: 54vw;
+        height: 32vw;
+        margin-top: 108vw;
+        margin-left: 15vw;
+    }
+    .text26{
+        margin-top: 0.7vw;
+        margin-left: 0.8vw;
+        font-size: 3.4vw;
+    }
+    .boxx1{
+        width: 3.6vw;
+        height: 3.6vw;
+        margin-left: 345%;
+        margin-top: -0vw;
+    } 
+    .boxxx1{
+        width: 3.6vw;
+        height: 3.6vw;
+        margin-left: 400%;
+        margin-top: 0vw;
+    } 
+    .boxx3{
+        width: 3.6vw;
+        height: 3.6vw;
+        margin-left: 345%;
+        margin-top: -0vw;
+    } 
+    .boxxx3{
+        width: 3.6vw;
+        height: 3.6vw;
+        margin-left: 400%;
+        margin-top: 0vw;
+    } 
+    .boxx4{
+        width: 3.6vw;
+        height: 3.6vw;
+        margin-left: 345%;
+        margin-top: -0vw;
+    } 
+    .boxxx4{
+        width: 3.6vw;
+        height: 3.6vw;
+        margin-left: 400%;
+        margin-top: 0vw;
+    } 
+    .boxx5{
+        width: 3.6vw;
+        height: 3.6vw;
+        margin-left: 345%;
+        margin-top: -0vw;
+    } 
+    .boxxx5{
+        width: 3.6vw;
+        height: 3.6vw;
+        margin-left: 400%;
+        margin-top: 0vw;
+    } 
+    .boxx7{
+        width: 3.6vw;
+        height: 3.6vw;
+        margin-left: 345%;
+        margin-top: -0vw;
+    } 
+    .boxxx7{
+        width: 3.6vw;
+        height: 3.6vw;
+        margin-left: 400%;
+        margin-top: 0vw;
+    } 
+    .text27{
+        margin-top: -1.9vw;
+        margin-left: -0.8vw;
+        font-size: 3vw;
+        line-height: 2.2vw;
+    }
+    .text28{
+        margin-top: -1vw;
+        margin-left: -1vw;
+        font-size: 3vw;
+        line-height: 2.2vw;
+    }
+    .you{
+        margin-top: 60vw;
+        margin-left: 3vw;
+        width: 50%;
+    }
+    .hire{
+        margin-top: 100vw;
+        margin-left: 0vw;
+        width: 99%;
+    }
+    .square16{
+        margin-top: 14.5vw;
+        margin-left: -6.5vw;
+        width: 23.5vw;
+    }
+    .square17{
+        width: 28vw;
+        margin-top: 192vw;
+        margin-left: -8.5vw;
+    }
+    .square18{
+        display: none;
+    }
+    .square19{
+        position: absolute;
+        width: 23.5vw;
+        height: 2.4vw;
+        margin-top: 199vw;
+        margin-left: 82vw;
+        rotate: 90deg;
+        z-index: 2;
     }
 } 
